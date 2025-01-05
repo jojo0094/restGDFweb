@@ -1,0 +1,14 @@
+
+<!--add navbar.html -->
+<html lang="en">
+{% include 'components/navbar.html' %}
+
+{% include 'components/viewsframe.html' %}
+<body>
+    <h1>Dynamic Map Example</h1>
+    <div hx-get="/mapview" hx-trigger="load" hx-target="#map-container">
+        Loading map...
+    </div>
+    <div id="map-container"></div>
+</body>
+</html>
